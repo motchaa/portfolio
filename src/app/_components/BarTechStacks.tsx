@@ -2,14 +2,14 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJava } from "@fortawesome/free-brands-svg-icons";
-import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
+import { faAws } from "@fortawesome/free-brands-svg-icons";
 import {
   SiPostgresql,
   SiNextdotjs,
   SiSpringboot,
   SiSpringsecurity,
   SiDocker,
-  SiKubernetes,
+  SiTypescript,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { useScrollReveal } from "../../utils/useScrollReveal";
@@ -121,7 +121,7 @@ export default function BarTechStacks() {
           </div>
         </motion.div>
 
-        {/* Docker */}
+        {/* Spring Data JPA */}
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={
@@ -147,14 +147,17 @@ export default function BarTechStacks() {
           className="flex w-full"
         >
           <div className="backdrop-blur-2xl py-[1.2rem] md:py-[1.7rem] flex items-center flex-col rounded-lg shadow-lg w-full border-2 border-white/50">
-            <SiDocker className=" mb-2 text-[32px] md:text-[42px] text-[#2496ED]" />
-            <p className="text-[14px] md:text-[16px] text-center">Docker</p>
+            <FontAwesomeIcon
+              icon={faAws}
+              className=" mb-2 text-[32px] md:text-[42px] text-[#FF9900]"
+            />
+            <p className="text-[14px] md:text-[16px] text-center">AWS</p>
           </div>
         </motion.div>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 w-full gap-4 md:gap-5">
-        {/* Kubernetes */}
+        {/* Docker */}
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={
@@ -180,12 +183,12 @@ export default function BarTechStacks() {
           className="flex w-full"
         >
           <div className="backdrop-blur-2xl py-[1.2rem] md:py-[1.7rem] flex items-center flex-col rounded-lg shadow-lg w-full border-2 border-white/50">
-            <SiKubernetes className=" mb-2 text-[32px] md:text-[42px] text-[#326CE5]" />
-            <p className="text-[14px] md:text-[16px] text-center">Kubernetes</p>
+            <SiDocker className=" mb-2 text-[32px] md:text-[42px] text-[#2496ED]" />
+            <p className="text-[14px] md:text-[16px] text-center">Docker</p>
           </div>
         </motion.div>
 
-        {/* Next.js */}
+        {/* TypeScript */}
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={
@@ -211,12 +214,12 @@ export default function BarTechStacks() {
           className="flex w-full"
         >
           <div className="backdrop-blur-2xl py-[1.2rem] md:py-[1.7rem] flex items-center flex-col rounded-lg shadow-lg w-full border-2 border-white/50">
-            <SiNextdotjs className=" mb-2 text-[32px] md:text-[42px] text-[#FFFFFF]" />
-            <p className="text-[14px] md:text-[16px] text-center">Next.js</p>
+            <SiTypescript className=" mb-2 text-[32px] md:text-[42px] text-[#326CE5]" />
+            <p className="text-[14px] md:text-[16px] text-center">TypeScript</p>
           </div>
         </motion.div>
 
-        {/* Node.js */}
+        {/* Next.js */}
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={
@@ -242,11 +245,8 @@ export default function BarTechStacks() {
           className="flex w-full"
         >
           <div className="backdrop-blur-2xl py-[1.2rem] md:py-[1.7rem] flex items-center flex-col rounded-lg shadow-lg w-full border-2 border-white/50">
-            <FontAwesomeIcon
-              icon={faNodeJs}
-              className=" mb-2 text-[32px] md:text-[42px] text-[#68A063]"
-            />{" "}
-            <p className="text-[14px] md:text-[16px] text-center">Node.js</p>
+            <SiNextdotjs className=" mb-2 text-[32px] md:text-[42px] text-[#FFFFFF]" />
+            <p className="text-[14px] md:text-[16px] text-center">Next.js</p>
           </div>
         </motion.div>
 

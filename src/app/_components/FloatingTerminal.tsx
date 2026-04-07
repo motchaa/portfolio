@@ -138,7 +138,7 @@ export default function FloatingTerminal() {
                     </span>
                   </p>
                   <p className="text-neutral-500 mt-1 pl-3 md:pl-4">
-                    software engineer | full-stack | technology enthusiast |
+                    software engineer | back-end | technology enthusiast |
                     voluntary in tech community
                   </p>
                 </div>

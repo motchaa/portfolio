@@ -46,7 +46,7 @@ export default function Header() {
             href="#"
             className="font-bold text-2xl text-red-700 drop-shadow-[0_0_5px_#b91c1c] animate-[pulse_3.5s_infinite]"
           >
-            Mota Dev
+            Motcha
           </a>
 
           {/* Desktop Navigation */}

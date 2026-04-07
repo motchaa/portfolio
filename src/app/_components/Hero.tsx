@@ -22,7 +22,7 @@ export default function Hero() {
 
   return (
     <section className="flex items-center justify-center px-4">
-      <div className="flex flex-col lg:flex-row w-[95%] md:w-[85%] lg:w-[80%] items-center justify-between mt-[8rem] md:mt-[12rem] lg:mt-[11rem] gap-8 lg:gap-6">
+      <div className="flex flex-col lg:flex-row w-[95%] md:w-[85%] lg:w-[80%] items-center justify-between mt-[9rem] md:mt-[12rem] lg:mt-[17rem] gap-8 lg:gap-6">
         <div className="flex flex-col items-center lg:items-start">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -38,10 +38,9 @@ export default function Hero() {
             className="rounded-2xl "
           >
             <div className="flex flex-col">
-              <h1 className="text-6xl md:text-5xl lg:text-7xl font-bold mb-4 text-center lg:text-left">
-                I&apos;m <span className="text-red-700">Mota</span>
+              <h1 className="text-5xl md:text-5xl lg:text-7xl font-bold mb-4 text-center lg:text-left">
+                I&apos;m <span className="text-red-700">Motcha</span>
                 <br />
-                Developer
               </h1>
             </div>
           </motion.div>
@@ -76,8 +75,8 @@ export default function Hero() {
             className="rounded-2xl"
           >
             <p className="text-base md:text-lg lg:text-xl font-inter font-[100] mt-[1.3rem] text-center lg:text-left">
-              Transforming ideas into websites, automations and intelligent{" "}
-              digital solutions.
+              Transforming ideas into automations and intelligent digital
+              solutions.
             </p>
           </motion.div>
 
@@ -98,14 +97,14 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-2 mt-[1.8rem] w-full sm:w-auto">
               <a
                 href="#portfolio"
-                className="py-3 px-8 sm:px-11 font-semibold rounded-md bg-gradient-to-r flex flex-row gap-x-2 items-center justify-center from-red-600 to-red-950"
+                className="py-3 px-8 sm:px-11 font-semibold rounded-md bg-gradient-to-r flex flex-row gap-x-2 items-center justify-center from-red-600 to-red-950 transition-all duration-300 hover:from-red-500 hover:to-red-800 hover:shadow-[0_0_20px_rgba(220,38,38,0.4)] hover:scale-[1.03] cursor-pointer"
               >
                 Projects
                 <FaCode />
               </a>
               <a
                 href="#contact"
-                className="py-3 px-8 sm:px-11 font-semibold rounded-md border-1 border-red-950 flex flex-row gap-x-2 items-center justify-center"
+                className="py-3 px-8 sm:px-11 font-semibold rounded-md border-1 border-red-950 flex flex-row gap-x-2 items-center justify-center transition-all duration-300 hover:bg-red-950/30 hover:border-red-700 hover:shadow-[0_0_20px_rgba(220,38,38,0.25)] hover:scale-[1.03] cursor-pointer"
               >
                 Contact
                 <FaEnvelope />

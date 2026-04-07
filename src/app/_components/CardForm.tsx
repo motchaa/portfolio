@@ -289,7 +289,7 @@ export default function CardForm() {
                 <div className="flex flex-col sm:flex-row items-center w-full justify-between mt-[1rem] gap-3">
                   <div className="flex border-[0.1rem] border-white/80 w-full sm:w-[48.5%] rounded-xl px-[0.8rem] md:px-[1rem] py-[0.8rem] transition-all duration-300 hover:-translate-y-1 active:translate-y-0">
                     <a
-                      href="https://github.com/ImDevMota"
+                      href="https://github.com/motchaa"
                       className="flex flex-row gap-x-[0.7rem] justify-start items-center"
                     >
                       <FaGithub
@@ -301,7 +301,7 @@ export default function CardForm() {
                       <div className="flex flex-col items-start">
                         <p className="text-sm md:text-base">Github</p>
                         <p className="text-gray-400/90 text-xs md:text-sm">
-                          @ImDevMota
+                          @motchaa
                         </p>
                       </div>
                     </a>

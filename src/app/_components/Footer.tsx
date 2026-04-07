@@ -5,12 +5,12 @@ export default function Footer() {
   return (
     <footer className="flex flex-col items-center mt-[6rem]">
       <div className="flex flex-col w-[18rem] items-center border-red-500 border-t-2">
-        <p className="mt-[1rem]">© 2026 MotaDev.</p>
+        <p className="mt-[1rem]">© 2026 Motcha.</p>
 
         {/* icons redes sociais */}
         <div className="flex flex-row mt-[0.8rem] gap-x-3 mb-[2rem] items-center">
           <div>
-            <a href="https://github.com/ImDevMota">
+            <a href="https://github.com/motchaa">
               <FaGithub
                 size={34}
                 color="#ffffff"
