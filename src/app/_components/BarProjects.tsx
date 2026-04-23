@@ -7,18 +7,19 @@ import ProjectModal from "./ProjectModal";
 
 const projects = [
   {
-    image: "./saas.png",
-    title: "SaaS - Sports Court Scheduling",
+    image: "./alfred.png",
+    title: "Bot Alfred",
     shortDescription:
-      "A complete SaaS platform for scheduling and managing sports courts with real-time availability.",
+      "Assistente financeiro para WhatsApp que utiliza Arquitetura Hexagonal para gerenciar gastos, receitas e limites mensais através de comandos simples e intuitivos.",
     description:
-      "A complete SaaS platform designed for scheduling and managing sports courts. The system features real-time court availability, online booking with payment integration, user management with different access levels, automated notifications, and a comprehensive admin dashboard for court owners. Built with scalability in mind, supporting multiple venues and sport types.",
+      "Assistente financeiro para WhatsApp que utiliza Arquitetura Hexagonal para gerenciar gastos, receitas e limites mensais através de comandos simples e intuitivos, integrando Java 17, Spring Boot e PostgreSQL para oferecer uma gestão de transações robusta e escalável. O projeto utiliza a API WAHA para comunicação via Webhooks, conta com um parser de comandos customizado para processamento em tempo real e garante a integridade dos dados com Flyway, destacando-se pela aplicação rigorosa de Clean Code e pela separação de responsabilidades que facilita a manutenção e a evolução contínua do sistema.",
     technologies: [
-      "Next.js",
-      "Node.js",
+      "Java",
+      "Spring Boot",
+      "Spring Data Jpa",
       "PostgreSQL",
-      "Tailwind CSS",
-      "Prisma",
+      "WAHA API",
+      "Docker",
     ],
   },
   {
@@ -28,7 +29,13 @@ const projects = [
       "A full-featured e-commerce store for coconut-based products with payment processing.",
     description:
       "A full-featured e-commerce platform built for Variedades do Coco, a store specializing in coconut-based products. Includes product catalog with categories and filters, shopping cart with persistent state, secure checkout with Stripe payment integration, order tracking, inventory management, and a responsive design optimized for mobile-first shopping experiences.",
-    technologies: ["React.js", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "Spring Data Jpa",
+      "PostgreSQL",
+      "Docker",
+    ],
   },
   {
     image: "./lp-tipminer.png",
@@ -85,7 +92,7 @@ export default function BarProjects() {
 
                 <div className="mt-[1rem] flex flex-col gap-y-[0.5rem]">
                   <a
-                    href="#"
+                    href="https://bot-alfred-lp.vercel.app/"
                     className="py-[0.5rem] w-full text-sm font-semibold rounded-lg bg-gradient-to-r from-red-600 to-red-950 flex items-center justify-center"
                   >
                     View Project

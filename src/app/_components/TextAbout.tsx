@@ -34,7 +34,11 @@ export default function TextAbout() {
           I&apos;m expanding my expertise through a postgraduate degree in
           Software Engineering, DevOps, and Cloud Computing. I also serve as a
           Volunteer Project Manager and Developer in the technology community{" "}
-          <a href="#" className="text-amber-300 font-bold">
+          <a
+            href="https://coda-ce.com.br"
+            target="_blank"
+            className="text-amber-300 font-bold"
+          >
             CODA.CE
           </a>
           . I&apos;m fascinated by technology and am always seeking to learn
@@ -62,7 +66,7 @@ export default function TextAbout() {
 
               {/* Quote text */}
               <p className="text-white/90 font-semibold text-sm md:text-lg lg:text-xl italic font-montserrat leading-relaxed tracking-wide text-center md:text-left">
-                Build it. Test it. Break it. Fix it.
+                Build it. Test it. Break it. Fix it. Repeat.
               </p>
 
               {/* Author */}
