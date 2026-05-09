@@ -7,7 +7,7 @@ export default function TypewriterText() {
     <div className=" flex text-2xl font-cascadia">
       <Typewriter
         words={[
-          "Technolohy Enthusiast",
+          "Technology Enthusiast",
           "Back-end Developer",
           "Software Engineer",
         ]}

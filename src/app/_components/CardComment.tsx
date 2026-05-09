@@ -292,7 +292,7 @@ export default function CardContact() {
 
               <div className="flex flex-col mt-[1.5rem] md:mt-[1.7rem] w-full">
                 <div className="flex flex-col gap-3 overflow-y-auto h-[250px] md:h-[350px] pr-2 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
-                  {comments.map((comment) => (
+                  {comments.map((comment, index) => (
                     <div
                       key={comment.id}
                       className="flex flex-row border-[0.1rem] border-white/80 w-full justify-start items-center rounded-xl px-[0.8rem] md:px-[1rem] py-[0.6rem] md:py-[0.8rem] gap-x-[0.5rem] md:gap-x-[0.7rem]"
@@ -312,7 +312,14 @@ export default function CardContact() {
                       )}
 
                       <div className="flex flex-col items-start min-w-0">
-                        <p className="text-sm md:text-base">{comment.name}</p>
+                        <p className="text-sm md:text-base flex items-center gap-x-1">
+                          {comment.name}
+                          {index === 0 && (
+                            <span className=" text-red-500 font-bold text-[10px] md:text-xs">
+                              (Owner)
+                            </span>
+                          )}
+                        </p>
                         <p className="text-gray-400/90 text-xs md:text-sm break-words">
                           {comment.message}
                         </p>

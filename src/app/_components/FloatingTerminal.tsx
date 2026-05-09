@@ -109,7 +109,7 @@ export default function FloatingTerminal() {
                 />
               </div>
               <span className="ml-3 font-mono text-xs text-neutral-500">
-                ~/mota-dev
+                ~/motcha
               </span>
             </div>
 

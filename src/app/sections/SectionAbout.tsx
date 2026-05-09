@@ -14,11 +14,14 @@ export default function SectionAbout() {
         <TitleAbout />
         <SubtitleAbout />
 
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-x-[3rem] mt-[2rem] md:mt-[3rem]">
+        <div className="flex flex-col lg:flex-row lg:items-stretch gap-6 lg:gap-x-[3rem] mt-[2rem] md:mt-[3rem]">
           <ImageAbout />
           <TextAbout />
         </div>
-        <ButtonDownload />
+
+        <div className="mt-6 md:mt-8">
+          <ButtonDownload />
+        </div>
       </div>
     </section>
   );

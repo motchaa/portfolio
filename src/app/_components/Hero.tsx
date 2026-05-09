@@ -39,7 +39,7 @@ export default function Hero() {
           >
             <div className="flex flex-col">
               <h1 className="text-5xl md:text-5xl lg:text-7xl font-bold mb-4 text-center lg:text-left">
-                I&apos;m <span className="text-red-700">Motcha</span>
+                I'm <span className="text-red-700">Mota</span>
                 <br />
               </h1>
             </div>
@@ -133,7 +133,7 @@ export default function Hero() {
                 <button className="relative flex px-4 sm:px-5 py-3 bg-[#0b0b0f] border border-red-500/20 rounded-[0.7rem] text-white font-medium transition">
                   <a
                     className="flex flex-row items-center gap-x-2 text-sm sm:text-base"
-                    href="https://github.com/ImDevMota"
+                    href="https://github.com/motchaa"
                   >
                     <FaGithub />
                     <span className="hidden sm:inline">GitHub</span>
