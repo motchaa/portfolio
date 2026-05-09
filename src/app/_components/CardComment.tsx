@@ -3,7 +3,7 @@
 import { useEffect, useState, FormEvent, ChangeEvent } from "react";
 import { motion } from "framer-motion";
 import { useInViewReveal } from "../../utils/useInViewReveal";
-import { FaGithub } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 
 interface Comment {
   id: number;
@@ -56,8 +56,18 @@ export default function CardContact() {
     try {
       const res = await fetch("/api/comments");
       if (res.ok) {
-        const data = await res.json();
-        setComments(data as Comment[]);
+        const data = (await res.json()) as Comment[];
+        if (data && data.length > 0) {
+          const oldestComment = data.reduce((oldest, current) =>
+            new Date(current.created_at) < new Date(oldest.created_at)
+              ? current
+              : oldest,
+          );
+          const otherComments = data.filter((c) => c.id !== oldestComment.id);
+          setComments([oldestComment, ...otherComments]);
+        } else {
+          setComments(data);
+        }
       }
     } catch {
       // silently fail on fetch
@@ -304,15 +314,13 @@ export default function CardContact() {
                           className="w-[36px] h-[36px] md:w-[42px] md:h-[42px] rounded-md object-cover bg-white/10 flex-shrink-0"
                         />
                       ) : (
-                        <FaGithub
-                          size={36}
-                          color="#ffffff"
-                          className="bg-white/10 py-[0.4rem] rounded-md flex-shrink-0"
-                        />
+                        <div className="w-[36px] h-[36px] md:w-[42px] md:h-[42px] rounded-md bg-white/10 flex-shrink-0 flex items-center justify-center">
+                          <FaUser className="w-[18px] h-[18px] md:w-[22px] md:h-[22px] text-white/80" />
+                        </div>
                       )}
 
                       <div className="flex flex-col items-start min-w-0">
-                        <p className="text-sm md:text-base flex items-center gap-x-1">
+                        <p className="text-sm md:text-base flex items-center gap-x-1 text-start">
                           {comment.name}
                           {index === 0 && (
                             <span className=" text-red-500 font-bold text-[10px] md:text-xs">
@@ -320,7 +328,7 @@ export default function CardContact() {
                             </span>
                           )}
                         </p>
-                        <p className="text-gray-400/90 text-xs md:text-sm break-words">
+                        <p className="text-gray-400/90 text-xs md:text-sm break-words text-start">
                           {comment.message}
                         </p>
                       </div>
