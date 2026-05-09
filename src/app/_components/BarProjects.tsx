@@ -21,30 +21,7 @@ const projects = [
       "WAHA API",
       "Docker",
     ],
-  },
-  {
-    image: "./e-commerce.png",
-    title: "E-commerce - Variedades do Coco",
-    shortDescription:
-      "A full-featured e-commerce store for coconut-based products with payment processing.",
-    description:
-      "A full-featured e-commerce platform built for Variedades do Coco, a store specializing in coconut-based products. Includes product catalog with categories and filters, shopping cart with persistent state, secure checkout with Stripe payment integration, order tracking, inventory management, and a responsive design optimized for mobile-first shopping experiences.",
-    technologies: [
-      "Java",
-      "Spring Boot",
-      "Spring Data Jpa",
-      "PostgreSQL",
-      "Docker",
-    ],
-  },
-  {
-    image: "./lp-tipminer.png",
-    title: "Landing Page - Tip Miner",
-    shortDescription:
-      "A modern, high-conversion landing page for the Tip Miner platform.",
-    description:
-      "A modern, high-conversion landing page developed for the Tip Miner platform. Features smooth scroll animations, responsive design across all devices, optimized performance with lazy loading, engaging call-to-action sections, testimonial carousels, and SEO-optimized structure. Focused on delivering an impactful first impression and maximizing user engagement.",
-    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    link: "https://github.com/motchaa/bot-alfred",
   },
 ];
 
@@ -92,7 +69,7 @@ export default function BarProjects() {
 
                 <div className="mt-[1rem] flex flex-col gap-y-[0.5rem]">
                   <a
-                    href="https://bot-alfred-lp.vercel.app/"
+                    href={project.link}
                     className="py-[0.5rem] w-full text-sm font-semibold rounded-lg bg-gradient-to-r from-red-600 to-red-950 flex items-center justify-center"
                   >
                     View Project
