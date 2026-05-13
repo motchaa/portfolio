@@ -1,6 +1,29 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { useScrollReveal } from "../../utils/useScrollReveal";
+
 export default function QuoteBlock() {
+  const visible = useScrollReveal(350, 670, 400, 1380);
+
   return (
-    <div className="w-full mt-4 md:mt-5">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      animate={
+        visible
+          ? {
+              opacity: 1,
+              x: 0,
+              transition: { duration: 0.6, delay: 0.2, ease: "easeOut" },
+            }
+          : {
+              opacity: 0,
+              x: 100,
+              transition: { duration: 0.6, ease: "easeIn" },
+            }
+      }
+      className="w-full mt-4 md:mt-5"
+    >
       <div className="relative rounded-xl overflow-hidden group">
         {/* Gradient border glow */}
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-red-500/30 via-amber-400/20 to-red-500/10 blur-sm opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
@@ -35,6 +58,6 @@ export default function QuoteBlock() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

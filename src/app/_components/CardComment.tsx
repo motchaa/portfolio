@@ -16,7 +16,7 @@ interface Comment {
 type Status = "idle" | "loading" | "success" | "error";
 
 export default function CardContact() {
-  const { ref, visible } = useInViewReveal(0.3);
+  const { ref, visible } = useInViewReveal(0.1, "-100px");
   const [comments, setComments] = useState<Comment[]>([]);
   const [status, setStatus] = useState<Status>("idle");
 

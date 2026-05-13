@@ -7,13 +7,13 @@ import { useScrollReveal } from "../../utils/useScrollReveal";
 
 export default function BarEducation() {
   // Card 1: Technologist Diplom
-  const visibleCol1 = useScrollReveal(1100, 1760, 1150, 1430);
+  const visibleCol1 = useScrollReveal(1100, 1760, 1150, 2100);
   // Card 2: Post Graduate
-  const visibleCol2 = useScrollReveal(1100, 1760, 1380, 1600);
+  const visibleCol2 = useScrollReveal(1100, 1760, 1380, 2300);
   // Card 3: Back-end Java
-  const visibleCol3 = useScrollReveal(1150, 1900, 1350, 1750);
+  const visibleCol3 = useScrollReveal(1150, 1900, 1350, 2500);
   // Card 4: Full-Stack
-  const visibleCol4 = useScrollReveal(1150, 1900, 1730, 1905);
+  const visibleCol4 = useScrollReveal(1150, 1900, 1730, 2700);
 
   return (
     <section className="flex flex-col mt-[2.5rem] gap-y-[1.5rem] md:gap-y-[2.5rem] w-[95%] md:w-[90%] lg:w-[80%]">

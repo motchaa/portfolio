@@ -5,7 +5,7 @@ import { useScrollReveal } from "../../utils/useScrollReveal";
 
 export default function TitleAbout() {
   //                  showDesktop, hideDesktop, showMobile, hideMobile
-  const visible = useScrollReveal(224, 350, 200, 230);
+  const visible = useScrollReveal(224, 350, 200, 440);
 
   return (
     <section className="flex flex-col items-center justify-center">

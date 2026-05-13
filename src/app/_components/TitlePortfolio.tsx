@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useScrollReveal } from "../../utils/useScrollReveal";
 
 export default function TitlePortfolio() {
-  const visible = useScrollReveal(1305, 1420, 890, 1090);
+  const visible = useScrollReveal(1305, 1420, 890, 1690);
 
   return (
     <div className="flex flex-col items-center justify-cente">

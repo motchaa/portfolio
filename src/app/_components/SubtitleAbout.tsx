@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useScrollReveal } from "../../utils/useScrollReveal";
 
 export default function SubtitleAbout() {
-  const visible = useScrollReveal(340, 390, 180, 260);
+  const visible = useScrollReveal(340, 390, 180, 490);
 
   return (
     <div className="flex flex-col items-center justify-center">

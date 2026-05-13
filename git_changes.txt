@@ -1,0 +1,8 @@
+﻿M	src/app/_components/BarTechStacks.tsx
+M	src/app/_components/CardForm.tsx
+M	src/app/_components/FloatingTerminal.tsx
+M	src/app/_components/Footer.tsx
+M	src/app/_components/Header.tsx
+M	src/app/_components/Hero.tsx
+M	src/app/_components/TextAbout.tsx
+M	src/app/_components/TextWriter.tsx

@@ -14,7 +14,7 @@ import {
 type Status = "idle" | "loading" | "success" | "error";
 
 export default function CardForm() {
-  const { ref, visible } = useInViewReveal(0.3);
+  const { ref, visible } = useInViewReveal(0.1, "-100px");
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
 

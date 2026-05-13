@@ -15,8 +15,8 @@ import { motion } from "framer-motion";
 import { useScrollReveal } from "../../utils/useScrollReveal";
 
 export default function BarTechStacks() {
-  const visibleCol1 = useScrollReveal(1012, 1800, 1350, 1460);
-  const visibleCol2 = useScrollReveal(1620, 1875, 1440, 1655);
+  const visibleCol1 = useScrollReveal(1012, 1800, 1350, 2170);
+  const visibleCol2 = useScrollReveal(1620, 1875, 1440, 2400);
 
   return (
     <section className="flex flex-col mt-[2.5rem] gap-y-4 md:gap-y-5 items-center justify-center w-[95%] md:w-[90%] lg:w-[80%]">
@@ -167,7 +167,7 @@ export default function BarTechStacks() {
                   scale: 1,
                   transition: {
                     duration: 1,
-                    delay: 0.7,
+                    delay: 0.4,
                     ease: [0.16, 1, 0.3, 1],
                   },
                 }
@@ -198,7 +198,7 @@ export default function BarTechStacks() {
                   scale: 1,
                   transition: {
                     duration: 1,
-                    delay: 0.6,
+                    delay: 0.5,
                     ease: [0.16, 1, 0.3, 1],
                   },
                 }
@@ -229,7 +229,7 @@ export default function BarTechStacks() {
                   scale: 1,
                   transition: {
                     duration: 1,
-                    delay: 0.5,
+                    delay: 0.6,
                     ease: [0.16, 1, 0.3, 1],
                   },
                 }
@@ -260,7 +260,7 @@ export default function BarTechStacks() {
                   scale: 1,
                   transition: {
                     duration: 1,
-                    delay: 0.4,
+                    delay: 0.7,
                     ease: [0.16, 1, 0.3, 1],
                   },
                 }

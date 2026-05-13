@@ -33,7 +33,7 @@ export default function NavbarProjects({
 
   const inactiveStyleIcon = "mb-1 text-[1.3em] md:text-[1.5em]";
 
-  const visible = useScrollReveal(1400, 1660, 1090, 1250);
+  const visible = useScrollReveal(1400, 1660, 1090, 1845);
 
   return (
     <section className="flex flex-col items-center justify-center w-full">
@@ -44,7 +44,7 @@ export default function NavbarProjects({
             ? {
                 opacity: 1,
                 y: 0,
-                transition: { duration: 0.6, delay: 0.4, ease: "easeOut" },
+                transition: { duration: 0.6, ease: "easeOut" },
               } // entra (de baixo pra cima)
             : {
                 opacity: 0,

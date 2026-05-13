@@ -1,6 +1,29 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { useScrollReveal } from "../../utils/useScrollReveal";
+
 export default function ButtonDownload() {
+  const visible = useScrollReveal(350, 670, 400, 1450);
+
   return (
-    <div className="mt-4 md:mt-6 w-full flex justify-center lg:justify-start">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      animate={
+        visible
+          ? {
+              opacity: 1,
+              x: 0,
+              transition: { duration: 0.6, delay: 0.2, ease: "easeOut" },
+            }
+          : {
+              opacity: 0,
+              x: 100,
+              transition: { duration: 0.6, ease: "easeIn" },
+            }
+      }
+      className="mt-4 md:mt-6 w-full flex justify-center lg:justify-start"
+    >
       <a
         href="/curriculo.docx"
         download="Curriculo_Thiago_Mota.docx"
@@ -10,6 +33,6 @@ export default function ButtonDownload() {
       >
         Download CV
       </a>
-    </div>
+    </motion.div>
   );
 }

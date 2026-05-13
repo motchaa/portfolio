@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useScrollReveal } from "../../utils/useScrollReveal";
 
 export default function SubtitlePortfolio() {
-  const visible = useScrollReveal(1330, 1455, 2750, 2950);
+  const visible = useScrollReveal(1330, 1455, 950, 1740);
 
   return (
     <div className="flex flex-col items-center justify-center mt-4">
@@ -15,7 +15,7 @@ export default function SubtitlePortfolio() {
             ? {
                 opacity: 1,
                 y: 0,
-                transition: { duration: 0.6, delay: 0.4, ease: "easeOut" },
+                transition: { duration: 0.6, ease: "easeOut" },
               }
             : {
                 opacity: 0,

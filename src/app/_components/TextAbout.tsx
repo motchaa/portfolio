@@ -5,7 +5,7 @@ import { useScrollReveal } from "../../utils/useScrollReveal";
 import QuoteBlock from "./QuoteBlock";
 
 export default function TextAbout() {
-  const visible = useScrollReveal(350, 670, 400, 750);
+  const visible = useScrollReveal(350, 670, 400, 960);
 
   return (
     <div className="flex flex-col">

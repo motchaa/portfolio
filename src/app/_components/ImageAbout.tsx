@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useScrollReveal } from "../../utils/useScrollReveal";
 
 export default function ImageAbout() {
-  const visible = useScrollReveal(450, 670, 400, 520);
+  const visible = useScrollReveal(450, 670, 400, 600);
 
   return (
     <div className="w-full lg:w-auto flex-shrink-0 lg:self-stretch">
@@ -28,7 +28,7 @@ export default function ImageAbout() {
         <img
           src="./about.png"
           alt=""
-          className="w-full h-[22rem] md:h-[22rem] lg:w-[500px] lg:h-[32.25rem] rounded-xl object-cover"
+          className="w-full h-[22rem] md:h-[55rem] lg:w-[500px] lg:h-[32.25rem] rounded-xl object-cover"
         />
       </motion.div>
     </div>

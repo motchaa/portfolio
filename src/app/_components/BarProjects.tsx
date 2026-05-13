@@ -26,7 +26,7 @@ const projects = [
 ];
 
 export default function BarProjects() {
-  const visible = useScrollReveal(1612, 1986, 1150, 1500);
+  const visible = useScrollReveal(1612, 1986, 1150, 2100);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   return (
