@@ -39,7 +39,7 @@ export default function Hero() {
           >
             <div className="flex flex-col">
               <h1 className="text-5xl md:text-5xl lg:text-7xl font-bold mb-4 text-center lg:text-left">
-                I'm <span className="text-red-700">Mota</span>
+                <span className="text-red-700">Motcha</span>
                 <br />
               </h1>
             </div>

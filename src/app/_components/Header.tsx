@@ -46,32 +46,32 @@ export default function Header() {
             href="#"
             className="font-bold text-2xl text-red-700 drop-shadow-[0_0_5px_#b91c1c] animate-[pulse_3.5s_infinite]"
           >
-            Mota
+            Motcha
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex flex-row gap-x-[2rem]">
             <a
               href="#"
-              className="border-b-2 border-transparent hover:border-red-700 transition-colors"
+              className="relative py-1 text-white hover:text-red-500 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full"
             >
               Home
             </a>
             <a
               href="#about"
-              className="border-b-2 border-transparent hover:border-red-700 transition-colors"
+              className="relative py-1 text-white hover:text-red-500 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full"
             >
               About
             </a>
             <a
               href="#portfolio"
-              className="border-b-2 border-transparent hover:border-red-700 transition-colors"
+              className="relative py-1 text-white hover:text-red-500 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full"
             >
               Portfolio
             </a>
             <a
               href="#contact"
-              className="border-b-2 border-transparent hover:border-red-700 transition-colors"
+              className="relative py-1 text-white hover:text-red-500 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full"
             >
               Contact
             </a>
@@ -105,28 +105,28 @@ export default function Header() {
           <a
             href="#"
             onClick={handleLinkClick}
-            className="py-4 text-lg font-medium border-b border-white/10 hover:text-red-500 transition-colors"
+            className="block py-4 text-lg font-medium border-b border-white/10 text-white hover:text-red-500 hover:translate-x-2 transition-all duration-300"
           >
             Home
           </a>
           <a
             href="#about"
             onClick={handleLinkClick}
-            className="py-4 text-lg font-medium border-b border-white/10 hover:text-red-500 transition-colors"
+            className="block py-4 text-lg font-medium border-b border-white/10 text-white hover:text-red-500 hover:translate-x-2 transition-all duration-300"
           >
             About
           </a>
           <a
             href="#portfolio"
             onClick={handleLinkClick}
-            className="py-4 text-lg font-medium border-b border-white/10 hover:text-red-500 transition-colors"
+            className="block py-4 text-lg font-medium border-b border-white/10 text-white hover:text-red-500 hover:translate-x-2 transition-all duration-300"
           >
             Portfolio
           </a>
           <a
             href="#contact"
             onClick={handleLinkClick}
-            className="py-4 text-lg font-medium hover:text-red-500 transition-colors"
+            className="block py-4 text-lg font-medium text-white hover:text-red-500 hover:translate-x-2 transition-all duration-300"
           >
             Contact
           </a>
